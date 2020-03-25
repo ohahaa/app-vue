@@ -17,7 +17,7 @@ module.exports = {
             {test: /\.css$/, use:['style-loader', 'css-loader']}, //配置处理.css文件的第三方loader规则
             {test: /\.less$/, use:['style-loader','css-loader', 'less-loader']},//配置处理.less文件的第三方loader规则
             {test: /\.scss$/, use:['style-loader','css-loader', 'sass-loader']}, //配置处理.scss文件
-            {test: /\.jpg$/, use: 'url-loader'},    // 配置处理url
+            {test: /\.(jpg|png)$/, use: 'url-loader'},    // 配置处理url
             // 如果limit给定的值，是图片的大小，单位是byte，如果我们引用的图片大于或者等于给定的limit值，?limit=123&name=[hash:8]-[name].[ext]
             // 则不会被转为base64格式的字符串，如果图片小于给定的limit值，则会被转为base64的字符串
             {test:/\.js$/, use: 'babel-loader', exclude:/node_modules/},    

@@ -32,9 +32,11 @@
     "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "bootstrap": "^3.3.7",
     "mint-ui": "^2.2.13",
     "vue": "^2.6.11",
+    "vue-resource": "^1.5.1",
     "vue-router": "^3.1.6"
   }
 }
